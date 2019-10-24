@@ -34,7 +34,8 @@ services:
 
   log-generator:
     build:
-      context:
+      context: .
+      dockerfile: ./log-generator/Dockerfile
         
     # image: mingrammer/flog:0.3.1
     # command: flog -w -t log -n 20000 -o /var/log/flink.log
